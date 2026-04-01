@@ -135,4 +135,19 @@ do {
 }
 ```
 
+## macOS GUI frontend (source included)
+
+This repository now also contains a macOS-only SwiftUI frontend prototype in:
+
+* `/home/runner/work/ssftp/ssftp/mftApp/mftApp.swift`
+* `/home/runner/work/ssftp/ssftp/mftApp/ContentView.swift`
+* `/home/runner/work/ssftp/ssftp/mftApp/SFTPFrontendViewModel.swift`
+
+The frontend provides:
+* SFTP connect/disconnect
+* Remote directory listing
+* File upload
+* File download
+
+To run it, add a **macOS App** target in Xcode and include these files in that target, then link against the existing `mft` framework target.
 
