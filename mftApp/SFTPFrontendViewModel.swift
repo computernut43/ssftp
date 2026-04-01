@@ -138,8 +138,6 @@ final class SFTPFrontendViewModel: ObservableObject {
             return
         }
 
-        FileManager.default.createFile(atPath: targetURL.path, contents: nil)
-
         isBusy = true
         statusMessage = "Downloading \(item.filename)..."
 
